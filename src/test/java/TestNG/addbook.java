@@ -13,7 +13,7 @@ public class addbook {
 	  WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/tmp/chromedriver");
 		  driver = new ChromeDriver();
 		  driver.get("http://18.222.216.188:32768/addressbook/");
 		  driver.manage().window().maximize();
