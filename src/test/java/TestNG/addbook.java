@@ -13,7 +13,7 @@ public class addbook {
 	  WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/tmp/chromedriver.exe");
 		  driver = new ChromeDriver();
 		  driver.get("http://3.128.28.35:8843/");
 		  driver.manage().window().maximize();
